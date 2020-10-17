@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <math.h>
+
+void greedyAlgorithm(float c) ;
+int main(void)
+{
+    float cost = get_float("Cost of product : \n");
+    float price = get_float("Your price : \n");
+    float remainder ;
+
+    remainder = cost - price ;
+    while (remainder < 0)
+    {
+        printf("You gave the missing change. \n") ;
+        scanf("%f", &remainder);
+        //break ; 
+    }
+    greedyAlgorithm(remainder) ;
+
+}
+
+void greedyAlgorithm(float c)
+{
+    int quarter = 0 ;
+    int dime = 0 ;
+    int nickel = 0 ;
+    int penny = 0 ;
+
+    while (c >= 0.25)
+    {
+        quarter ++ ;
+        c = c - 0.25 ;
+    }
+
+    while (c >= 0.10)
+    {
+        dime ++ ;
+        c = c - 0.10 ;
+    }
+
+    while (c >= 0.05)
+    {
+        nickel ++ ;
+        c = c - 0.05 ;
+    }
+
+    while (c >= 0.01)
+    {
+        penny ++ ;
+        c = c - 0.01 ;
+    }
+
+    printf("Para üstü olarak : \n") ;
+    printf("Quarters : %d \n", quarter) ;
+    printf("Dimes : %d\n", dime) ;
+    printf("Nickels : %d\n", nickel) ;
+    printf("Pennies : %d\n", penny) ; 
+}

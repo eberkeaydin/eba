@@ -1,1 +1,1 @@
-# Software footprints for beginners, algorithm lovers that is from a freshman computer science student.
+# Software footprints for beginners, lovely algorithms that is from a freshman computer science student.

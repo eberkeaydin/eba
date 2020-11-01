@@ -51,7 +51,7 @@ void greedyAlgorithm(float c)
         c = c - 0.01 ;
     }
 
-    printf("Para üstü olarak : \n") ;
+    printf("Back in change : \n") ;
     printf("Quarters : %d \n", quarter) ;
     printf("Dimes : %d\n", dime) ;
     printf("Nickels : %d\n", nickel) ;

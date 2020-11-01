@@ -1,3 +1,3 @@
-# my-software-footprints
-student of life !
-A Simple Example of Greedy Algorithm with using CS50 library.
+# greedy-algorithm-c
+simple example of greedy algorithm
+with using CS50 library.
